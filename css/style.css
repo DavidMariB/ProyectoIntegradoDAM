@@ -64,6 +64,10 @@ body {
 	-webkit-box-shadow:0 0 6px #000;
 	position:relative
 }
+.map{
+	width:400px;
+	height:400px;
+}
 /* ============================= Pagina Principal ====================== */
 a {
 	color:#72716f;

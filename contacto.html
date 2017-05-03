@@ -1,180 +1,120 @@
+<!-- David Marí, Paco Monrabal, Adrian Poveda, Borja Royuela, Jose Vicente Marí, Victor Olivares -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>LoungeHotel | Locations</title>
+<title>Hotel DAM | Contacto</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<script type="text/javascript" src="js/jquery-1.6.js" ></script>
-<script type="text/javascript" src="js/cufon-yui.js"></script>
-<script type="text/javascript" src="js/cufon-replace.js"></script>
-<script type="text/javascript" src="js/Adamina_400.font.js"></script>
-<script type="text/javascript" src="js/jquery.jqtransform.js" ></script>
-<script type="text/javascript" src="js/script.js" ></script>
-<script type="text/javascript" src="js/atooltip.jquery.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
-<![endif]-->
 </head>
 <body id="page5">
 <div class="bg1">
   <div class="bg2">
     <div class="main">
-      <!-- header -->
+     <!-- Cabecera -->
       <header>
-        <h1><a href="index.html" id="logo">LoungeHotel</a></h1>
-        <div class="department"> 9863 - 9867 Mill Road, LA, MG09 99HT<br>
-          <span>Freephone: &nbsp; +1 800 559 6580</span> </div>
+        <h1><a href="index.html" id="logo">DAMHotel</a></h1>
+        <div class="department"> Florida Universitaria, Catarroja<br>
+          <span>Teléfono: 96 122 03 80</span> <br>
+          <span>Correo: info@florida.es </span> </div>
       </header>
       <div class="box">
         <nav>
           <ul id="menu">
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="rooms.html">Rooms</a></li>
-            <li class="active"><a href="locations.html">Locations</a></li>
+            <li class="active"><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="habitaciones.html">Habitaciones</a></li>
+            <li class="active"><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
-        <!-- header end -->
-        <!-- content -->
+        <!-- Final Cabecera -->
+        <!-- Pagina Principal -->
         <article id="content">
           <div class="box1">
             <div class="wrapper">
               <form action="#" id="form1">
-                <h2>Book a Room</h2>
+                <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
-                    <input type="text" class="input">
-                    Your Name: </div>
+                    Nombre: <input type="text" name="nombre"></div>
                   <div class="row">
-                    <input type="text" class="input">
-                    E-Mail Address: </div>
+                    Mail:  <input type="text" name="mail"> </div>
                   <div class="row">
-                    <input type="text" class="input">
-                    Home Phone: </div>
+                    Teléfono: <input type="text" name="tlf"></div>
                   <div class="row">
-                    <div class="select1">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    Length of Stay: </div>
-                  <div class="row">
-                    <div class="select1">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    Number in Party: </div>
-                  <div class="row">
+                    Fecha de Llegada: <input type="date" name="fecha"> <br> </div>
+                  <div class="row"> <br>
+                    Fecha de Salida: <br> <input type="date" name="fecha"> </div>
+                  <div class="row"> <br>
+                    <br> Numero de Personas:
                     <div class="select2">
                       <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="select2">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="select2">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    Arrival Date: </div>
-                  <div class="row_textarea"> Additional Comments:
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div> <br>
+                  <div class="row_textarea"> <br> Comentario Adicional:
                     <textarea cols="1" rows="1"></textarea>
                   </div>
-                  <div class="wrapper"> <a href="#" class="button1">Send</a> <a href="#" class="button1">Clear</a> </div>
+                  <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
               </form>
               <div class="col2 pad">
-                <h2><img src="images/title_marker1.jpg" alt="">Contact Form</h2>
+                <h2><img src="images/title_marker1.jpg" alt="">Formulario de Contacto</h2>
                 <form id="ContactForm" action="#">
                   <div>
                     <div  class="wrapper">
-                      <input type="text" class="input">
-                      Name: </div>
+                      Nombre: <input type="text" class="input"> </div>
+                    <div  class="wrapper"> 
+                      Direccion: <input type="text" class="input"> </div>
                     <div  class="wrapper">
-                      <input type="text" class="input">
-                      Address: </div>
-                    <div  class="wrapper">
-                      <input type="text" class="input">
-                      Email: </div>
+                      Email: <input type="text" class="input"> </div>
                     <div  class="textarea_box">
-                      <textarea name="textarea" cols="1" rows="1"></textarea>
-                      Contacts: </div>
-                    <a href="#" class="button2">Send</a> <a href="#" class="button2">Clear</a> </div>
+                      Comentario: <textarea name="textarea" cols="1" rows="1"></textarea> </div>
+                    <input type="submit" class="button2"></a> <input type="reset" class="button2"></a> </div>
                 </form>
               </div>
             </div>
           </div>
           <div class="pad">
-            <h2>Our Contacts</h2>
+            <h2>Nuestros Contactos</h2>
             <div class="line2">
               <div class="wrapper line3">
                 <div class="col1">
-                  <p class="pad_bot1"><strong class="color2">USA</strong></p>
-                  <p class="pad_bot1">8901 Marmora Road, Glasgow, D04</p>
-                  <p class="cols"> Freephone:<br>
-                    Telephone:<br>
-                    Fax:<br>
-                    Email:</p>
-                  +1 800 559 6580<br>
-                  +1 800 603 6035<br>
-                  +1 800 889 9898<br>
-                  <a href="#" class="color1">mail@demolink.org</a> </div>
+                  <p class="pad_bot1"><strong class="color2">España</strong></p>
+                  <p class="pad_bot1">Florida Universitaria Catarroja</p>
+                  <p class="cols"> 
+                    Telefono:<br> 96 122 03 80<br>
+                  <a href="#" class="color1">info@florida.es</a> </div>
                 <div class="col1 pad_left1">
-                  <p class="pad_bot1"><strong class="color2">Canada</strong></p>
-                  <p class="pad_bot1">8901 Marmora Road, Glasgow, D04</p>
-                  <p class="cols"> Freephone:<br>
-                    Telephone:<br>
-                    Fax:<br>
-                    Email:</p>
-                  +1 800 559 6580<br>
-                  +1 800 603 6035<br>
-                  +1 800 889 9898<br>
-                  <a href="#" class="color1">mail@demolink.org</a> </div>
-                <div class="col1 pad_left1">
-                  <p class="pad_bot1"><strong class="color2">Mexico</strong></p>
-                  <p class="pad_bot1">8901 Marmora Road, Glasgow, D04</p>
-                  <p class="cols"> Freephone:<br>
-                    Telephone:<br>
-                    Fax:<br>
-                    Email:</p>
-                  +1 800 559 6580<br>
-                  +1 800 603 6035<br>
-                  +1 800 889 9898<br>
-                  <a href="#" class="color1">mail@demolink.org</a> </div>
+                 <p class="pad_bot1"><strong class="color2">Localización</strong></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.9996496844865!2d-0.4154526849889176!3d39.40151397949608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604e82a8672a35%3A0xed578f5f80fed685!2sFlorida+Universitaria!5e0!3m2!1ses!2ses!4v1493822105295" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  
               </div>
             </div>
           </div>
         </article>
-        <!--content end-->
+        <!--Fin Pagina Principal-->
       </div>
     </div>
   </div>
 </div>
 <div class="main">
-  <!-- footer -->
-  <footer>
-    <div class="col2">Copyright &copy; <a href="#">Domain Name</a> All Rights Reserved | Design by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a>
+  <!-- Pie de Pagina -->
+  <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
-          <li><a href="index.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="booking.html">Booking</a></li>
-          <li><a href="rooms.html">Rooms</a></li>
-          <li class="last active"><a href="locations.html">Locations</a></li>
+          <li class="active"><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="tour.html">Tour</a></li>
+          <li><a href="habitaciones.html">Habitaciones</a></li>
+          <li class="last"><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -186,10 +126,8 @@
         <li><a href="#" class="normaltip"><img src="images/icon4.jpg" alt=""></a></li>
       </ul>
     </div>
-    <!-- {%FOOTER_LINK} -->
   </footer>
-  <!-- footer end -->
+  <!-- Fin Pie de Pagina -->
 </div>
-<script type="text/javascript">Cufon.now();</script>
 </body>
 </html>

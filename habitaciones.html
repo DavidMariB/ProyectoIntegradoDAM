@@ -23,10 +23,10 @@
         <nav>
           <ul id="menu">
             <li><a href="index.html">Inicio</a></li>
-            <li class="active"><a href="services.html">Servicios</a></li>
-            <li><a href="booking.html">Tour</a></li>
-            <li><a href="rooms.html">Habitaciones</a></li>
-            <li><a href="locations.html">Contacto</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li class="active"><a href="habitaciones.html">Habitaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </nav>
         <!-- Final Cabecera -->
@@ -35,80 +35,57 @@
           <div class="box1">
             <div class="wrapper">
               <form action="#" id="form1">
-                <h2>Book a Room</h2>
+                <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
-                    <input type="text" class="input">
-                    Your Name: </div>
+                    Nombre: <input type="text" name="nombre"></div>
                   <div class="row">
-                    <input type="text" class="input">
-                    E-Mail Address: </div>
+                    Mail:  <input type="text" name="mail"> </div>
                   <div class="row">
-                    <input type="text" class="input">
-                    Home Phone: </div>
+                    Teléfono: <input type="text" name="tlf"></div>
                   <div class="row">
-                    <div class="select1">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    Length of Stay: </div>
-                  <div class="row">
-                    <div class="select1">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    Number in Party: </div>
-                  <div class="row">
+                    Fecha de Llegada: <input type="date" name="fecha"> <br> </div>
+                  <div class="row"> <br>
+                    Fecha de Salida: <br> <input type="date" name="fecha"> </div>
+                  <div class="row"> <br>
+                    <br> Numero de Personas:
                     <div class="select2">
                       <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="select2">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    <div class="select2">
-                      <select>
-                        <option>&nbsp;</option>
-                        <option>...</option>
-                      </select>
-                    </div>
-                    Arrival Date: </div>
-                  <div class="row_textarea"> Additional Comments:
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                    </div> <br>
+                  <div class="row_textarea"> <br> Comentario Adicional:
                     <textarea cols="1" rows="1"></textarea>
                   </div>
-                  <div class="wrapper"> <a href="#" class="button1">Send</a> <a href="#" class="button1">Clear</a> </div>
+                  <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
               </form>
               <div class="col2 pad">
-                <h2><img src="images/title_marker1.jpg" alt="">Best Propositions of This Month</h2>
+                <h2><img src="images/title_marker1.jpg" alt="">Promociones del mes</h2>
                 <div class="wrapper line1">
                   <div class="col3">
                     <figure class="pad_bot3"><img src="images/page3_img1.jpg" alt=""></figure>
-                    <p class="pad_bot1"><strong class="color3">Lorem ipsum dolor amet consectetur</strong></p>
-                    <p>Adipisicing elito eiusmod tempor incididunt ut labore dolore magna.</p>
+                    <p class="pad_bot1"><strong class="color3">Suite Atico</strong></p>
+                    <p>Reserva hoy esta habitación y obten un 40% de descuento adicional.</p>
                     <ul class="list2">
-                      <li><span>2</span>Rooms</li>
-                      <li><span>4</span>Beds</li>
+                      <li><span>3</span>Habitaciones</li>
+                      <li><span>5</span>Camas</li>
                     </ul>
-                    <a href="#" class="button2">Book Room</a> </div>
+                    <a href="#" class="button2">Reservar Habitacion</a> </div>
                   <div class="col3 pad_left2">
                     <figure class="pad_bot3"><img src="images/page3_img4.jpg" alt=""></figure>
-                    <p class="pad_bot1"><strong class="color3">Lorem ipsum dolor amet consectetur</strong></p>
-                    <p>Ut enim ad minim veniam nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                    <p class="pad_bot1"><strong class="color3">Planta 23</strong></p>
+                    <p>Reserva hoy una habitación situada en este piso y consigue un 70% de descuento.</p>
                     <ul class="list2">
-                      <li><span>2</span>Rooms</li>
-                      <li><span>4</span>Beds</li>
+                      <li><span>2</span>Habitaciones</li>
+                      <li><span>4</span>Camas</li>
                     </ul>
-                    <a href="#" class="button2">Book Room</a> </div>
+                    <a href="#" class="button2">Reservar Habitacion</a> </div>
                 </div>
               </div>
             </div>
@@ -116,57 +93,55 @@
           <div class="pad">
             <div class="wrapper line3">
               <div class="col2">
-                <h2>Quality Standards</h2>
-                <p class="pad_bot1"><strong class="color2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo</strong> </p>
-                <p class="pad_bot1"> Inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enigm ipsam voluptatem nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus quia voluptas sit aspernatur aut odit aut fugit.</p>
+                <h2>Estandares de Calidad</h2>
+                <p class="pad_bot1"><strong class="color2">Nuestras habitaciones cuentan con todo tipo de Servicios</strong> </p>
+                <p class="pad_bot1"> Las habitaciones cuentan con algunas de las siguientes caracteristicas:.</p>
                 <div class="wrapper pad_bot2">
                   <div class="col1">
                     <ul class="list1">
-                      <li><a href="#">Inventore veritatis et quasi architecto</a></li>
-                      <li><a href="#">Nemo enim ipsam voluptatem quivolupta</a></li>
-                      <li><a href="#">Sit aspernatur aut odit aut fugit sed</a></li>
+                      <li><a href="#"> Baño completamente equipado </a></li>
+                      <li><a href="#"> Televisión por Satelite </a></li>
+                      <li><a href="#"> Wi-fi </a></li>
                     </ul>
                   </div>
                   <div class="col1 pad_left1">
                     <ul class="list1">
-                      <li><a href="#">Neque porro quisquam est, qui dolorem</a></li>
-                      <li><a href="#">Ipsum quia dolor amet consectetur</a></li>
-                      <li><a href="#">Adipisci velit, sed quia non numquam</a></li>
+                      <li><a href="#"> Aire Acondicionado </a></li>
+                      <li><a href="#"> MiniBar </a></li>
+                      <li><a href="#"> Detector de Humo </a></li>
                     </ul>
                   </div>
                 </div>
-                <p class="pad_bot1"><strong class="color2">Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu fugiat pariatur</strong></p>
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam. </div>
+                <p class="pad_bot1"><strong class="color2">Otro equipamiento:</strong></p>
+                <p class="pad_bot1">Las habitaciones cuentan con mas equipamiento dependiendo de la habitación que se elija. </p></div>
               <div class="col1 pad_left1">
-                <h2>The Rooms</h2>
-                <p class="pad_bot1"><strong class="color2">Nemo enim ipsam voluptatem</strong><br>
-                  Quia voluptas sit aspernatur aut odit autugit sed quia ne voluptatem nesciunt. </p>
+                <h2>Las Habitaciones</h2>
+                <p class="pad_bot1"><strong class="color2">Equipamiento Basico</strong><br>
+                  Baño, habitaciones, televisión por Satelite, Wi-Fi. </p>
                 <figure class="pad_bot3"><img src="images/page4_img1.jpg" alt=""></figure>
                 <ul class="list1 pad_bot3">
-                  <li><a href="#">Neque porro quisquam est qui</a></li>
-                  <li><a href="#">Dolorem ipsum quia dolor sit amet</a></li>
-                  <li><a href="#">Consectetur adipisci velit sed</a></li>
+                  <li><a href="#">Click aquí para ver fotos de las habitaciones</a></li>
                 </ul>
-                <a href="#" class="button1">Read More</a> </div>
+                <a href="#" class="button1">Leer Más</a> </div>
             </div>
           </div>
         </article>
-        <!--content end-->
+        <!--Fin Pagina Principal-->
       </div>
     </div>
   </div>
 </div>
 <div class="main">
-  <!-- footer -->
+  <!-- Pie de Pagina -->
   <footer>
-    <div class="col2">Copyright &copy; <a href="#">Domain Name</a> All Rights Reserved | Design by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a>
+    <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
-          <li><a href="index.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="booking.html">Booking</a></li>
-          <li class="active"><a href="rooms.html">Rooms</a></li>
-          <li class="last"><a href="locations.html">Locations</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="booking.html">Tour</a></li>
+          <li class="active"><a href="rooms.html">Habitaciones</a></li>
+          <li class="last"><a href="locations.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -178,9 +153,8 @@
         <li><a href="#" class="normaltip"><img src="images/icon4.jpg" alt=""></a></li>
       </ul>
     </div>
-    <!-- {%FOOTER_LINK} -->
   </footer>
-  <!-- footer end -->
+  <!-- Fin Pie de Pagina -->
 </div>
 <script type="text/javascript">Cufon.now();</script>
 </body>
