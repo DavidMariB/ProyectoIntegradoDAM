@@ -14,7 +14,7 @@
     <div class="main">
       <!-- Cabecera -->
       <header>
-        <h1><a href="index.html" id="logo">DAMHotel</a></h1>
+        <h1><a href="index.php" id="logo">DAMHotel</a></h1>
         <div class="department"> Florida Universitaria, Catarroja<br>
           <span>Teléfono: 96 122 03 80</span> <br>
           <span>Correo: info@florida.es </span> </div>
@@ -22,11 +22,11 @@
       <div class="box">
         <nav>
           <ul id="menu">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="tour.html">Tour</a></li>
-            <li class="active"><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="servicios.php">Servicios</a></li>
+            <li><a href="tour.php">Tour</a></li>
+            <li class="active"><a href="habitaciones.php">Habitaciones</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
           </ul>
         </nav>
         <!-- Final Cabecera -->
@@ -137,11 +137,11 @@
     <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="services.html">Servicios</a></li>
-          <li><a href="booking.html">Tour</a></li>
-          <li class="active"><a href="rooms.html">Habitaciones</a></li>
-          <li class="last"><a href="locations.html">Contacto</a></li>
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="services.php">Servicios</a></li>
+          <li><a href="booking.php">Tour</a></li>
+          <li class="active"><a href="rooms.php">Habitaciones</a></li>
+          <li class="last"><a href="locations.php">Contacto</a></li>
         </ul>
       </nav>
     </div>
@@ -156,6 +156,5 @@
   </footer>
   <!-- Fin Pie de Pagina -->
 </div>
-<script type="text/javascript">Cufon.now();</script>
 </body>
 </html>

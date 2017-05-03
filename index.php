@@ -14,7 +14,7 @@
     <div class="main">
       <!-- Cabecera -->
       <header>
-        <h1><a href="index.html" id="logo">DAMHotel</a></h1>
+        <h1><a href="index.php" id="logo">DAMHotel</a></h1>
         <div class="department"> Florida Universitaria, Catarroja<br>
           <span>Teléfono: 96 122 03 80</span> <br>
           <span>Correo: info@florida.es </span> </div>
@@ -22,11 +22,11 @@
       <div class="box">
         <nav>
           <ul id="menu">
-            <li class="active"><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="tour.html">Tour</a></li>
-            <li><a href="habitaciones.html">Habitaciones</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li class="active"><a href="index.php">Inicio</a></li>
+            <li><a href="servicios.php">Servicios</a></li>
+            <li><a href="tour.php">Tour</a></li>
+            <li><a href="habitaciones.php">Habitaciones</a></li>
+            <li><a href="contacto.php">Contacto</a></li>
           </ul>
         </nav>
         <!-- Final Cabecera -->
@@ -38,15 +38,15 @@
                 <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
-                    Nombre: <input type="text" name="nombre"></div>
+                    Nombre: <input title="Introduce un nombre" type="text" name="nombre" required></div>
                   <div class="row">
-                    Mail:  <input type="text" name="mail"> </div>
+                    Mail:  <input title="Introduce un correo" type="email" name="mail" required> </div>
                   <div class="row">
-                    Teléfono: <input type="text" name="tlf"></div>
+                    Teléfono: <input title="Introduce un telefono" type="text" name="tlf" required></div>
                   <div class="row">
-                    Fecha de Llegada: <input type="date" name="fecha"> <br> </div>
+                    Fecha de Llegada: <input title="Selecciona una fecha" type="date" name="fecha" required> <br> </div>
                   <div class="row"> <br>
-                    Fecha de Salida: <br> <input type="date" name="fecha"> </div>
+                    Fecha de Salida: <br> <input title="Selecciona una fecha" type="date" name="fecha" required is_numeric> </div>
                   <div class="row"> <br>
                     <br> Numero de Personas:
                     <div class="select2">
@@ -66,13 +66,7 @@
                 </fieldset>
               </form>
               <div class="kwicks-wrapper marg_bot1">
-                <ul class="kwicks horizontal">
-                  <li><img src="images/img1.jpg" alt=""></li>
-                  <li><img src="images/img2.jpg" alt=""></li>
-                  <li><img src="images/img3.jpg" alt=""></li>
-                  <li><img src="images/img4.jpg" alt=""></li>
-                </ul>
-              </div>
+            </div>
             </div>
             <div class="pad">
               <div class="line1">
@@ -123,11 +117,11 @@
     <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
-          <li class="active"><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="tour.html">Tour</a></li>
-          <li><a href="habitaciones.html">Habitaciones</a></li>
-          <li class="last"><a href="contacto.html">Contacto</a></li>
+          <li class="active"><a href="index.php">Inicio</a></li>
+          <li><a href="servicios.php">Servicios</a></li>
+          <li><a href="tour.php">Tour</a></li>
+          <li><a href="habitaciones.php">Habitaciones</a></li>
+          <li class="last"><a href="contacto.php">Contacto</a></li>
         </ul>
       </nav>
     </div>
