@@ -38,18 +38,17 @@
                 <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
-                    Nombre: <input title="Introduce un nombre" type="text" name="nombre" required></div>
+                    Nombre: <input type="text" name="nombre" required></div>
                   <div class="row">
-                    Mail:  <input title="Introduce un correo" type="email" name="mail" required> </div>
+                    Mail:  <input type="email" name="mail" required> </div>
                   <div class="row">
-                    Teléfono: <input title="Introduce un telefono" type="text" name="tlf" required></div>
+                    Teléfono: <input type="text" name="tlf" required></div>
                   <div class="row">
-                    Fecha de Llegada: <input title="Selecciona una fecha" type="date" name="fecha" required> <br> </div>
+                    Fecha de Llegada: <input type="date" name="fechallegada" required> <br> </div>
                   <div class="row"> <br>
-                    Fecha de Salida: <br> <input title="Selecciona una fecha" type="date" name="fecha" required is_numeric> </div>
+                    Fecha de Salida: <br> <input type="date" name="fechasalida" required> </div>
                   <div class="row"> <br>
                     <br> Numero de Personas:
-                    <div class="select2">
                       <select>
                           <option>1</option>
                           <option>2</option>
@@ -57,7 +56,6 @@
                           <option>4</option>
                           <option>5</option>
                         </select>
-                      </div>
                     </div> <br>
                   <div class="row_textarea"> <br> Comentario Adicional:
                     <textarea cols="1" rows="1"></textarea>
@@ -65,8 +63,10 @@
                   <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
               </form>
-              <div class="kwicks-wrapper marg_bot1">
-            </div>
+                <img class="mySlides" src="images/img1.jpg" width="640" height="454">
+                <img class="mySlides" src="images/img2.jpg" width="640" height="454">
+                <img class="mySlides" src="images/img3.jpg" width="640" height="454">
+                <img class="mySlides" src="images/img4.jpg" width="640" height="454">
             </div>
             <div class="pad">
               <div class="line1">
@@ -135,5 +135,33 @@
     </div>
   </footer>
 </div>
+<!-- Este Script sirve para hacer que la fecha elegida en la llegada no pueda ser menor que la fecha actual -->
+<script>
+  var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("fechallegada")[0].setAttribute('min', today);
+</script>
+<!-- Este hace lo mismo pero con la fecha de salida -->
+<script>
+  var today = new Date().toISOString().split('T')[0];
+    document.getElementsByName("fechasalida")[0].setAttribute('min', today);
+</script>
+
+<!-- Este Script sirve para hacer el SlideShow de Imagenes de forma Automatica -->
+<script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > x.length) {slideIndex = 1} 
+      x[slideIndex-1].style.display = "block"; 
+      setTimeout(carousel, 5000); // Cambiamos la imagen cada 5 seg
+  }
+</script>
 </body>
 </html>

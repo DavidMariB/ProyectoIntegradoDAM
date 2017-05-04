@@ -342,7 +342,8 @@ footer a:hover {
 	line-height:24px
 }
 #ContactForm .textarea_box {
-	min-height:216px
+	min-height:216px;
+	background:#EFFBF2
 }
 #ContactForm a {
 	margin-left:10px;
@@ -366,7 +367,7 @@ footer a:hover {
 	float:right;
 	width:482px;
 	height:198px;
-	background:#fff;
+	background:#EFFBF2;
 	border:1px solid #f2f2f2;
 	padding:3px 5px;
 	color:#72716f;

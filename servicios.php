@@ -62,7 +62,7 @@
                   <div class="row_textarea"> <br> Comentario Adicional:
                     <textarea cols="1" rows="1"></textarea>
                   </div>
-                  <br> <div class="wrapper"> <a href="#" class="button1">Enviar</a> <a href="#" class="button1">Borrar</a> </div>
+                  <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
               </form>
               <div class="col2 pad">
