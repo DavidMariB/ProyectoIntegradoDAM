@@ -1,6 +1,6 @@
 <!-- Este Script sirve para hacer el SlideShow de Imagenes de forma Automatica -->
-  var slideIndex = 0;
-  carousel();
+      var slideIndex = 0;
+  
 
   function carousel() {
       var i;
@@ -11,5 +11,9 @@
       slideIndex++;
       if (slideIndex > x.length) {slideIndex = 1} 
       x[slideIndex-1].style.display = "block"; 
+      x[slideIndex-1].className += " animated";
       setTimeout(carousel, 5000); // Cambiamos la imagen cada 5 seg
-  }
+  };
+  carousel();
+
+  

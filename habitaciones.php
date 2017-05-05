@@ -34,33 +34,31 @@
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="#" id="form1">
+              <form action="scripts_bbdd/realizar_reserva.php" id="form1" method="post">
                 <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
-                    Nombre: <input type="text" name="nombre"></div>
+                    Nombre: <input type="text" name="nombre" id="nombre" required></div>
                   <div class="row">
-                    Mail:  <input type="text" name="mail"> </div>
+                    Mail:  <input type="email" name="mail" id="mail" required> </div>
                   <div class="row">
-                    Teléfono: <input type="text" name="tlf"></div>
+                    Teléfono: <input type="text" name="tlfn" id="tlfn" required></div>
                   <div class="row">
-                    Fecha de Llegada: <input type="date" name="fecha"> <br> </div>
+                    Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
                   <div class="row"> <br>
-                    Fecha de Salida: <br> <input type="date" name="fecha"> </div>
+                    Fecha de Salida: <br> <input type="date" name="fechasalida" id="fecha_salida" required> </div>
                   <div class="row"> <br>
                     <br> Numero de Personas:
-                    <div class="select2">
-                      <select>
+                      <select form="form1" name="num_personas">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                           <option>5</option>
                         </select>
-                      </div>
                     </div> <br>
                   <div class="row_textarea"> <br> Comentario Adicional:
-                    <textarea cols="1" rows="1"></textarea>
+                    <textarea cols="1" rows="1" form="form1" name="coment"></textarea>
                   </div>
                   <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
@@ -156,5 +154,8 @@
   </footer>
   <!-- Fin Pie de Pagina -->
 </div>
+<script src="js/datepicker_llegada.js"></script>
+<script src="js/datepicker_salida.js"></script>
+<script src="js/slideshow.js"></script>
 </body>
 </html>

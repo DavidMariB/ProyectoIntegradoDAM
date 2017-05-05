@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
 </head>
 <body id="page1">
 <div class="bg1">
@@ -49,7 +50,7 @@
                     Fecha de Salida: <br> <input type="date" name="fechasalida" id="fecha_salida" required> </div>
                   <div class="row"> <br>
                     <br> Numero de Personas:
-                      <select>
+                      <select form="form1" name="num_personas">
                           <option>1</option>
                           <option>2</option>
                           <option>3</option>
@@ -58,15 +59,18 @@
                         </select>
                     </div> <br>
                   <div class="row_textarea"> <br> Comentario Adicional:
-                    <textarea cols="1" rows="1"></textarea>
+                    <textarea cols="1" rows="1" form="form1" name="coment"></textarea>
                   </div>
                   <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
               </form>
-                <img class="mySlides" src="images/img1.jpg" width="640" height="454">
-                <img class="mySlides" src="images/img2.jpg" width="640" height="454">
-                <img class="mySlides" src="images/img3.jpg" width="640" height="454">
-                <img class="mySlides" src="images/img4.jpg" width="640" height="454">
+                <div style="overflow: hidden;">
+                <img class="mySlides slideInRight" src="images/img1.jpg" width="640" height="454">
+                <img class="mySlides slideInRight" src="images/img2.jpg" width="640" height="454">
+                <img class="mySlides slideInRight" src="images/img3.jpg" width="640" height="454">
+                <img class="mySlides slideInRight" src="images/img4.jpg" width="640" height="454"> 
+                </div>
+                
             </div>
             <div class="pad">
               <div class="line1">
@@ -135,34 +139,8 @@
     </div>
   </footer>
 </div>
-<script>
-<!-- Este Script sirve para hacer que la fecha elegida en la salida no pueda ser menor que la fecha actual -->
-
-  var today = new Date().toISOString().split('T')[0];
-    document.getElementsByName("fechallegada")[0].setAttribute('min', today);
-</script>
-<script>
-<!-- Este Script sirve para hacer que la fecha elegida en la salida no pueda ser menor que la fecha actual -->
-
-  var today = new Date().toISOString().split('T')[0];
-    document.getElementsByName("fechasalida")[0].setAttribute('min', today);
-</script>
-<script>
-<!-- Este Script sirve para hacer el SlideShow de Imagenes de forma Automatica -->
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1} 
-      x[slideIndex-1].style.display = "block"; 
-      setTimeout(carousel, 5000); // Cambiamos la imagen cada 5 seg
-  }
-</script>
+<script src="js/datepicker_llegada.js"></script>
+<script src="js/datepicker_salida.js"></script>
+<script src="js/slideshow.js"></script>
 </body>
 </html>
