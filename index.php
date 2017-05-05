@@ -34,19 +34,19 @@
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="#" id="form1">
+              <form action="scripts_bbdd/realizar_reserva.php" id="form1" method="post">
                 <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
-                    Nombre: <input type="text" name="nombre" required></div>
+                    Nombre: <input type="text" name="nombre" id="nombre" required></div>
                   <div class="row">
-                    Mail:  <input type="email" name="mail" required> </div>
+                    Mail:  <input type="email" name="mail" id="mail" required> </div>
                   <div class="row">
-                    Teléfono: <input type="text" name="tlf" required></div>
+                    Teléfono: <input type="text" name="tlfn" id="tlfn" required></div>
                   <div class="row">
-                    Fecha de Llegada: <input type="date" name="fechallegada" required> <br> </div>
+                    Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
                   <div class="row"> <br>
-                    Fecha de Salida: <br> <input type="date" name="fechasalida" required> </div>
+                    Fecha de Salida: <br> <input type="date" name="fechasalida" id="fecha_salida" required> </div>
                   <div class="row"> <br>
                     <br> Numero de Personas:
                       <select>
@@ -135,19 +135,20 @@
     </div>
   </footer>
 </div>
-<!-- Este Script sirve para hacer que la fecha elegida en la llegada no pueda ser menor que la fecha actual -->
 <script>
+<!-- Este Script sirve para hacer que la fecha elegida en la salida no pueda ser menor que la fecha actual -->
+
   var today = new Date().toISOString().split('T')[0];
     document.getElementsByName("fechallegada")[0].setAttribute('min', today);
 </script>
-<!-- Este hace lo mismo pero con la fecha de salida -->
 <script>
+<!-- Este Script sirve para hacer que la fecha elegida en la salida no pueda ser menor que la fecha actual -->
+
   var today = new Date().toISOString().split('T')[0];
     document.getElementsByName("fechasalida")[0].setAttribute('min', today);
 </script>
-
-<!-- Este Script sirve para hacer el SlideShow de Imagenes de forma Automatica -->
 <script>
+<!-- Este Script sirve para hacer el SlideShow de Imagenes de forma Automatica -->
   var slideIndex = 0;
   carousel();
 

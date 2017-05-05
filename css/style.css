@@ -393,7 +393,8 @@ footer a:hover {
 }
 #form1 .row_textarea {
 	height:102px;
-	line-height:22px
+	line-height:22px;
+	
 }
 #form1 .input {
 	font:12px Arial, Helvetica, sans-serif;
@@ -407,7 +408,7 @@ footer a:hover {
 #form1 textarea {
 	font:12px Arial, Helvetica, sans-serif;
 	color:#72716f;
-	background:none;
+	background:#EFFBF2;
 	height:54px;
 	padding:3px 5px;
 	width:222px;
