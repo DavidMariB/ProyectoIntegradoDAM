@@ -7,6 +7,12 @@
 <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<!-- Aquí implementamos la función de traductor -->
+<div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body id="page5">
 <div class="bg1">
@@ -93,7 +99,6 @@
                 <div class="col1 pad_left1">
                  <p class="pad_bot1"><strong class="color2">Localización</strong></p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.9996496844865!2d-0.4154526849889176!3d39.40151397949608!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604e82a8672a35%3A0xed578f5f80fed685!2sFlorida+Universitaria!5e0!3m2!1ses!2ses!4v1493822105295" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-                  
               </div>
             </div>
           </div>
@@ -105,7 +110,7 @@
 </div>
 <div class="main">
   <!-- Pie de Pagina -->
-  <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
+  <div class="col2">Copyright &copy;<a href="#" class="scrollup"> www.damhotel.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
           <li class="active"><a href="index.php">Inicio</a></li>
