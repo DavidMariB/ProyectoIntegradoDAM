@@ -39,60 +39,15 @@ function googleTranslateElementInit() {
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="scripts_bbdd/realizar_reserva.php" id="form1" method="post">
-                <h2>Reservar Habitación</h2>
-                <fieldset>
-                  <div class="row">
-                    Nombre: <input type="text" name="nombre" id="nombre" required></div>
-                  <div class="row">
-                    Mail:  <input type="email" name="mail" id="mail" required> </div>
-                  <div class="row">
-                    Teléfono: <input type="text" name="tlfn" id="tlfn" required></div>
-                  <div class="row">
-                    Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
-                  <div class="row"> <br>
-                    Fecha de Salida: <br> <input type="date" name="fechasalida" id="fecha_salida" required> </div>
-                  <div class="row"> <br>
-                    <br> Numero de Personas:
-                      <select form="form1" name="num_personas">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                    </div> <br>
-                  <div class="row_textarea"> <br> Comentario Adicional:
-                    <textarea cols="1" rows="1" form="form1" name="coment"></textarea>
-                  </div>
-                  <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
-                </fieldset>
-              </form>
-              <div class="col2 pad">
-                <h2><img src="" alt=""></h2>
-                <div class="wrapper line1">
-                  <div class="col3">
-                    <figure class="pad_bot3"><img src="" alt=""></figure>
-                    <p class="pad_bot1"><strong class="color3"></strong></p>
-                    <p></p>
-                    <ul class="list2">
-                      <li><span></span></li>
-                      <li><span></span></li>
-                    </ul>
-                    <a href="#" class="button2"></a> </div>
-                  <div class="col3 pad_left2">
-                    <figure class="pad_bot3"><img src="" alt=""></figure>
-                    <p class="pad_bot1"><strong class="color3"></strong></p>
-                    <p></p>
-                    <ul class="list2">
-                      <li><span></span></li>
-                      <li><span></span></li>
-                    </ul>
-                    <a href="#" class="button2"></a> </div>
-                </div>
-              </div>
+              <img class="mySlides slideInRight" src="images/tour_spa.jpg">
+              <img class="mySlides slideInRight" src="images/tour_restaurante.jpg">
+              <img class="mySlides slideInRight" src="images/tour_gimnasio.jpg">
+              <img class="mySlides slideInRight" src="images/tour_piscina.jpg">
+              <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
             </div>
           </div>
+        </div>
         </article>
         <!--Fin Pagina Principal-->
       </div>
@@ -126,6 +81,6 @@ function googleTranslateElementInit() {
 </div>
 <script src="js/datepicker_llegada.js"></script>
 <script src="js/datepicker_salida.js"></script>
-<script src="js/slideshow.js"></script>
+<script src="js/slideShow.js"></script>
 </body>
 </html>

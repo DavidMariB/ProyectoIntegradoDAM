@@ -76,7 +76,6 @@ function googleTranslateElementInit() {
                 <img class="mySlides slideInRight" src="images/img3.jpg" width="640" height="454">
                 <img class="mySlides slideInRight" src="images/img4.jpg" width="640" height="454"> 
                 </div>
-                
             </div>
             <div class="pad">
               <div class="line1">
@@ -147,7 +146,6 @@ function googleTranslateElementInit() {
 </div>
 <script src="js/datepicker_llegada.js"></script>
 <script src="js/datepicker_salida.js"></script>
-<script src="js/slideshow.js"></script>
-<script src="js/scrollUp.js"></script>
+<script src="js/slideShowAutomatico.js"></script>
 </body>
 </html>

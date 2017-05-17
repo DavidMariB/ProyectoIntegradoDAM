@@ -134,6 +134,5 @@ function googleTranslateElementInit() {
 </div>
 <script src="js/datepicker_llegada.js"></script>
 <script src="js/datepicker_salida.js"></script>
-<script src="js/slideshow.js"></script>
 </body>
 </html>
