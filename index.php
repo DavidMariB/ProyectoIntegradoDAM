@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/login.css" type="text/css" media="all">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <!-- Aquí implementamos la función de traductor -->
 <div id="google_translate_element"></div><script type="text/javascript">
 function googleTranslateElementInit() {
@@ -24,8 +26,26 @@ function googleTranslateElementInit() {
         <h1><a href="index.php" id="logo">DAMHotel</a></h1>
         <div class="department"> Florida Universitaria, Catarroja<br>
           <span>Teléfono: 96 122 03 80</span> <br>
-          <span>Correo: info@florida.es </span> </div>
+          <span>Correo: info@florida.es </span> <br> 
+          <nav class="acceder">
+            <ul>
+              <li>
+                 <a id="login" href="#">Acceder</a>
+                 <div id="login-content">
+                    <form>
+                      <input id="user" type="text" name="User" placeholder="Usuario" required>
+                      <input id="pass" type="password" name="Password" placeholder="Pass" required>
+                      <input type="submit" id="submit" value="Login">
+                      <label><input type="checkbox" checked="checked">Recuerdame</label>
+                  </form>
+                  <a id="register" href="scripts_bbdd/registro.php">Registrarse</a>
+               </div>                     
+              </li>
+           </ul>
+          </nav>
+        </div>
       </header>
+      <p>
       <div class="box">
         <nav>
           <ul id="menu">
@@ -41,7 +61,7 @@ function googleTranslateElementInit() {
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="scripts_bbdd/realizar_reserva.php" id="form1" method="post">
+              <form action="reservar.php" id="form1" method="post">
                 <h2>Reservar Habitación</h2>
                 <fieldset>
                   <div class="row">
@@ -49,7 +69,7 @@ function googleTranslateElementInit() {
                   <div class="row">
                     Mail:  <input type="email" name="mail" id="mail" required> </div>
                   <div class="row">
-                    Teléfono: <input type="text" name="tlfn" id="tlfn" required></div>
+                    Teléfono: <input type="number" name="tlfn" id="tlfn" required></div>
                   <div class="row">
                     Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
                   <div class="row"> <br>
@@ -147,5 +167,6 @@ function googleTranslateElementInit() {
 <script src="js/datepicker_llegada.js"></script>
 <script src="js/datepicker_salida.js"></script>
 <script src="js/slideShowAutomatico.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

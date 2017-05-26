@@ -48,7 +48,7 @@ function googleTranslateElementInit() {
                   <div class="row">
                     Mail:  <input type="email" name="mail" id="mail" required> </div>
                   <div class="row">
-                    Teléfono: <input type="text" name="tlfn" id="tlfn" required></div>
+                    Teléfono: <input type="number" name="tlfn" id="tlfn" required></div>
                   <div class="row">
                     Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
                   <div class="row"> <br>
