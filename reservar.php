@@ -12,6 +12,7 @@ function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<?php require '/scripts_bbdd/conectarBD.php' ?>
 </head>
 <body id="page4">
 <div class="bg1">
@@ -35,47 +36,44 @@ function googleTranslateElementInit() {
           </ul>
         </nav>
         <!-- Final Cabecera -->
+<?php       
+function devuelve_habitaciones_libres($inicio,$fin){
+require '/scripts_bbdd/conectarBD.php';
+$resultado = mysqli_query($conectar,"SELECT estancia.cod_hotel, estancia.tipo,estancia.id,estancia.nombre,habitacion.clasificacion,habitacion.plazas, 
+    habitacion.precio,habitacion.descripcion FROM estancia INNER JOIN hotel ON estancia.cod_hotel=hotel.codigo INNER JOIN habitacion ON 
+    estancia.id=habitacion.id_estancia WHERE estancia.id NOT IN (SELECT reserva.cod_habitacion FROM reserva WHERE reserva.inicio BETWEEN '$inicio' AND '$fin' OR reserva.fin 
+      BETWEEN '$inicio' AND '$fin') AND estancia.tipo='habitacion' AND hotel.codigo=1;");   
+return $resultado;
+}
+?>
         <!-- Pagina Principal -->
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="scripts_bbdd/realizar_reserva.php" method="post">
+              <form action="scripts_bbdd/realizar_reserva.php?fechallegada=<?php echo $_POST['fechallegada']; ?>&fechasalida=<?php echo $_POST['fechasalida']; ?>&pension=<?php echo $_POST['pension']; ?>" method="post">
                 <h2 align="center">Reservar Habitación</h2>
                 <fieldset>
-                  <div class="row">
-                    Nombre: <input type="text" name="nombre" id="nombre" required></div>
-                  <div class="row">
-                    Mail:  <input type="email" name="mail" id="mail" required> </div>
-                  <div class="row">
-                    Teléfono: <input type="number" name="tlfn" id="tlfn" required></div>
-                  <div class="row">
-                    Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
-                  <div class="row"> <br>
-                    Fecha de Salida: <br> <input type="date" name="fechasalida" id="fecha_salida" required> </div>
-                  <div class="row"> <br>
-                    <br> Numero de Personas:
-                      <select form="form1" name="num_personas">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                    </div> <br>
-                    <div class="row"> <br>
-                    <br> Habitacion:
-                      <select form="form1" name="num_personas">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                        </select>
-                    </div> <br>
-                  <div class="row_textarea"> <br> Comentario Adicional:
-                    <textarea cols="1" rows="1" form="form1" name="coment"></textarea>
-                  </div>
-                  <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
+                  <div class="row"><br>Fecha llegada: <input type="text" name="fechallegada" id="fechallegada" value="<?php echo $_POST['fechallegada']; ?>" disabled></div>
+                  <div class="row"><br>Fecha salida: <input type="text" name="fechasalida" id="fechasalida" value="<?php echo $_POST['fechasalida']; ?>" disabled></div>
+                  <div class="row"><br>Pension: <input type="text" name="pension" id="pension" value="<?php echo $_POST['pension']; ?>" disabled></div>
+                  <br>Habitación:
+                      <select name="habitaciones" id="habitaciones">
+                      <?php
+                        $resultado = devuelve_habitaciones_libres($_POST['fechallegada'],$_POST['fechasalida']);
+                        while($row=mysqli_fetch_array($resultado)){
+                           echo ("<option value=\"".$row['id']."\">".$row['nombre']." - ".$row['clasificacion']." - ".$row['plazas']." plazas, ".$row['precio']."€/noche"."</option>");
+                        }
+                      ?>
+                      </select>
+                    </div>
+                  <div class="row"><br>Nombre: <input type="text" name="nombre" id="nombre" required></div>
+                  <div class="row"><br>Apellidos: <input type="text" name="apellidos" id="apellidos" required></div>
+                  <div class="row"><br>Identificación: <input type="text" name="identificacion" id="identificacion" required></div><br>
+                  <div class="row">Fecha de Nacimiento: <input type="date" name="fechanacimiento" id="fechanacimiento" required></div>
+                  <div class="row"><br>Telefono: <input type="text" name="telf" id="telf" required></div>
+                  <div class="row"><br>Email:<input type="email" name="mail" id="mail" required> </div>
+                  <div class="row"><br>Nacionalidad: <input type="text" name="nacionalidad" id="nacionalidad" required></div>
+                  <br> <div class="wrapper"></a><input type="reset" class="button1"></a><input type="submit" class="button1" value="Confirmar reserva"></div>
                 </fieldset>
               </form>
             </div>
