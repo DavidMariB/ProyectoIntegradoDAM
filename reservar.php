@@ -49,7 +49,7 @@ function googleTranslateElementInit() {
                       <select name="habitaciones" id="habitaciones">
                       <!-- <?php
 
-                        function devuelve_habitaciones_libres($inicio,$fin){
+                       /* function devuelve_habitaciones_libres($inicio,$fin){
                         require '/scripts_bbdd/conectarBD.php';
                         $resultado = mysqli_query($conectar,"SELECT estancia.cod_hotel, estancia.tipo,estancia.id,estancia.nombre,habitacion.clasificacion,habitacion.plazas, 
                             habitacion.precio,habitacion.descripcion FROM estancia INNER JOIN hotel ON estancia.cod_hotel=hotel.codigo INNER JOIN habitacion ON 
@@ -61,7 +61,7 @@ function googleTranslateElementInit() {
                         $resultado = devuelve_habitaciones_libres($_POST['fechallegada'],$_POST['fechasalida']);
                         while($row=mysqli_fetch_array($resultado)){
                            echo ("<option value=\"".$row['id']."\">".$row['nombre']." - ".$row['clasificacion']." - ".$row['plazas']." plazas, ".$row['precio']."€/noche"."</option>");
-                        }
+                        }*/
                       ?> -->
                       </select>
                     </div>
