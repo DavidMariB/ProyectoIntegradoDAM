@@ -15,6 +15,16 @@ function googleTranslateElementInit() {
 <?php require '/scripts_bbdd/conectarBD.php' ?>
 </head>
 <body id="page4">
+<?php       
+function devuelve_habitaciones_libres($inicio,$fin){
+require '/scripts_bbdd/conectarBD.php';
+$resultado = mysqli_query($conectar,"SELECT estancia.cod_hotel, estancia.tipo,estancia.id,estancia.nombre,habitacion.clasificacion,habitacion.plazas, 
+    habitacion.precio,habitacion.descripcion FROM estancia INNER JOIN hotel ON estancia.cod_hotel=hotel.codigo INNER JOIN habitacion ON 
+    estancia.id=habitacion.id_estancia WHERE estancia.id NOT IN (SELECT reserva.cod_habitacion FROM reserva WHERE reserva.inicio BETWEEN '$inicio' AND '$fin' OR reserva.fin 
+      BETWEEN '$inicio' AND '$fin') AND estancia.tipo='habitacion' AND hotel.codigo=1;");   
+return $resultado;
+}
+?>
 <div class="bg1">
   <div class="bg2">
     <div class="main">
@@ -36,16 +46,6 @@ function googleTranslateElementInit() {
           </ul>
         </nav>
         <!-- Final Cabecera -->
-<?php       
-function devuelve_habitaciones_libres($inicio,$fin){
-require '/scripts_bbdd/conectarBD.php';
-$resultado = mysqli_query($conectar,"SELECT estancia.cod_hotel, estancia.tipo,estancia.id,estancia.nombre,habitacion.clasificacion,habitacion.plazas, 
-    habitacion.precio,habitacion.descripcion FROM estancia INNER JOIN hotel ON estancia.cod_hotel=hotel.codigo INNER JOIN habitacion ON 
-    estancia.id=habitacion.id_estancia WHERE estancia.id NOT IN (SELECT reserva.cod_habitacion FROM reserva WHERE reserva.inicio BETWEEN '$inicio' AND '$fin' OR reserva.fin 
-      BETWEEN '$inicio' AND '$fin') AND estancia.tipo='habitacion' AND hotel.codigo=1;");   
-return $resultado;
-}
-?>
         <!-- Pagina Principal -->
         <article id="content">
           <div class="box1">
