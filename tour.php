@@ -57,7 +57,7 @@ function googleTranslateElementInit() {
 <div class="main">
   <!-- Pie de Pagina -->
   <footer>
-    <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
+    <div class="col2">Copyright &copy;<a href="#"> www.hoteldesk.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
           <li><a href="index.php">Inicio</a></li>

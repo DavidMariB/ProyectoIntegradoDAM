@@ -40,32 +40,20 @@ function googleTranslateElementInit() {
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="scripts_bbdd/realizar_reserva.php" id="form1" method="post">
+               <form action="reservar.php" id="form1" method="post">
                 <h2>Reservar Habitación</h2>
                 <fieldset>
-                  <div class="row">
-                    Nombre: <input type="text" name="nombre" id="nombre" required></div>
-                  <div class="row">
-                    Mail:  <input type="email" name="mail" id="mail" required> </div>
-                  <div class="row">
-                    Teléfono: <input type="number" name="tlfn" id="tlfn" required></div>
-                  <div class="row">
-                    Fecha de Llegada: <input type="date" name="fechallegada" id="fecha_llegada" required> <br> </div>
+                  <div class="row">Fecha de Llegada: <br><input type="date" name="fechallegada" id="fecha_llegada" required></div><br>
+                  <div class="row"><br>Fecha de Salida:<br><input type="date" name="fechasalida" id="fecha_salida" required> </div><br>
                   <div class="row"> <br>
-                    Fecha de Salida: <br> <input type="date" name="fechasalida" id="fecha_salida" required> </div>
-                  <div class="row"> <br>
-                    <br> Numero de Personas:
-                      <select form="form1" name="num_personas">
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
+                   <br>Elige pensión:<br>
+                      <select form="form1" name="pension">
+                          <option>Alojamiento</option>
+                          <option>Desayuno</option>
+                          <option>Media</option>
+                          <option>Completa</option>
                         </select>
-                    </div> <br>
-                  <div class="row_textarea"> <br> Comentario Adicional:
-                    <textarea cols="1" rows="1" form="form1" name="coment"></textarea>
-                  </div>
+                    </div><br><br><br>
                   <br> <div class="wrapper"> <input type="submit" class="button1"></a> <input type="reset" class="button1"></a> </div>
                 </fieldset>
               </form>
@@ -113,7 +101,7 @@ function googleTranslateElementInit() {
 </div>
 <div class="main">
   <!-- Pie de Pagina -->
-  <div class="col2">Copyright &copy;<a href="#" class="scrollup"> www.damhotel.com</a> Proyecto Integrado | DAM
+  <div class="col2">Copyright &copy;<a href="#" class="scrollup"> www.hoteldesk.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
           <li class="active"><a href="index.php">Inicio</a></li>
@@ -135,5 +123,7 @@ function googleTranslateElementInit() {
   </footer>
   <!-- Fin Pie de Pagina -->
 </div>
+<script src="js/datepicker_llegada.js"></script>
+<script src="js/datepicker_salida.js"></script>
 </body>
 </html>

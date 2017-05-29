@@ -66,7 +66,7 @@ function googleTranslateElementInit() {
                 <img class="mySlides slideInRight" src="images/img1.jpg" width="640" height="454">
                 <img class="mySlides slideInRight" src="images/img2.jpg" width="640" height="454">
                 <img class="mySlides slideInRight" src="images/img3.jpg" width="640" height="454">
-                <img class="mySlides slideInRight" src="images/img4.jpg" width="640" height="454"> 
+                <img class="mySlides slideInRight" src="images/img4.jpg" width="640" height="454">
                 </div>
             </div>
             <div class="pad">
@@ -81,8 +81,8 @@ function googleTranslateElementInit() {
                     <p class="pad_bot1">Puedes ver una vista general de las habitaciones en las fotos que hay en la parte superior de esta página.</p>
                     </div>
                   <div class="col1 pad_left1">
-                    <h2><img src="images/title_marker3.jpg" alt="">LMAO</h2>
-                    <p class="pad_bot1">LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO.</p>
+                    <h2><img src="images/title_marker3.jpg" alt="">Servicios</h2>
+                    <p class="pad_bot1">Consulta nuestra pagina de servicios para ver todo lo que ofrecemos</p>
                     </div>
                 </div>
               </div>
@@ -91,17 +91,17 @@ function googleTranslateElementInit() {
           <div class="pad">
             <div class="wrapper line3">
               <div class="col2">
-                <h2>¡Bienvenidos a nuestro Hotel!</h2>
-                <p class="pad_bot1"><strong class="color2">LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO</strong><br>
-                  LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO. </p>
-                <p class="pad_bot2"> LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO LMAO</p>
+                <h2>¡Bienvenidos a Hotel Desk!</h2>
+                <p class="pad_bot1"><strong class="color2">Descubre todo lo que te podemos ofrecer</strong><br>
+                  Consulta en recepción o en nuestra pagina web para descubrir las habitaciones y servicios que ofrecemos. </p>
+                <p class="pad_bot2"> </p>
                 <a href="#" class="button1">Leer Más</a> </div>
               <div class="col1 pad_left1">
                 <h2>Sobre Nosotros</h2>
                 <div class="wrapper">
                   <figure class="left marg_right1"><img src="images/f_azul.jpg" alt=""></figure>
                   <p class="pad_bot1"><strong class="color2">96 122 03 80</strong></p>
-                  <p class="pad_bot2"> DAM Hotel localizado en Catarroja, pagina desarrollada para el proyecto integrado de 1º DAM .</p>
+                  <p class="pad_bot2"> Hotel Desk localizado en Catarroja, pagina desarrollada para el proyecto integrado de 1º DAM .</p>
                 </div>
                 <a href="#" class="button1">Leer Más</a> </div>
             </div>
@@ -115,7 +115,7 @@ function googleTranslateElementInit() {
 <div class="main">
   <!-- Pie de Pagina -->
   <footer>
-    <div class="col2">Copyright &copy;<a href="#" class="scrollup"> www.damhotel.com</a> Proyecto Integrado | DAM
+    <div class="col2">Copyright &copy;<a href="#"> www.hoteldesk.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
           <li class="active"><a href="index.php">Inicio</a></li>

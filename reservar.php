@@ -336,12 +336,12 @@ function googleTranslateElementInit() {
 <div class="main">
   <!-- Pie de Pagina -->
   <footer>
-    <div class="col2">Copyright &copy;<a href="#"> www.damhotel.com</a> Proyecto Integrado | DAM
+    <div class="col2">Copyright &copy;<a href="#"> www.hoteldesk.com</a> Proyecto Integrado | DAM
       <nav>
         <ul id="footer_menu">
           <li><a href="index.php">Inicio</a></li>
           <li><a href="servicios.php">Servicios</a></li>
-          <li class="active"><a href="tour.php">Tour</a></li>
+          <li><a href="tour.php">Tour</a></li>
           <li><a href="habitaciones.php">Habitaciones</a></li>
           <li><a href="contacto.php">Contacto</a></li>
         </ul>
@@ -358,7 +358,5 @@ function googleTranslateElementInit() {
   </footer>
   <!-- Fin Pie de Pagina -->
 </div>
-<script src="js/datepicker_llegada.js"></script>
-<script src="js/datepicker_salida.js"></script>
 </body>
 </html>
