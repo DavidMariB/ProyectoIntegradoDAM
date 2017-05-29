@@ -27,22 +27,6 @@ function googleTranslateElementInit() {
         <div class="department"> Florida Universitaria, Catarroja<br>
           <span>Teléfono: 96 122 03 80</span> <br>
           <span>Correo: info@florida.es </span> <br> 
-          <nav class="acceder">
-            <ul>
-              <!-- <li>
-                 <a id="login" href="#">Acceder</a>
-                 <div id="login-content">
-                    <form>
-                      <input id="user" type="text" name="User" placeholder="Usuario" required>
-                      <input id="pass" type="password" name="Password" placeholder="Pass" required>
-                      <input type="submit" id="submit" value="Login">
-                      <label><input type="checkbox" checked="checked">Recuerdame</label>
-                  </form>
-                  <a id="register" href="scripts_bbdd/registro.php">Registrarse</a>
-               </div>                     
-              </li> -->
-           </ul>
-          </nav>
         </div>
       </header>
       <p>
@@ -155,6 +139,5 @@ function googleTranslateElementInit() {
 <script src="js/datepicker_llegada.js"></script>
 <script src="js/datepicker_salida.js"></script>
 <script src="js/slideShowAutomatico.js"></script>
-<script src="js/login.js"></script>
 </body>
 </html>

@@ -135,7 +135,5 @@ function googleTranslateElementInit() {
   </footer>
   <!-- Fin Pie de Pagina -->
 </div>
-<script src="js/datepicker_llegada.js"></script>
-<script src="js/datepicker_salida.js"></script>
 </body>
 </html>

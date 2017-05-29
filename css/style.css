@@ -4,7 +4,7 @@ article, aside, audio, canvas, command, datalist, details, embed, figcaption, fi
 mark, rp, rt, ruby, summary, time {
 	display:inline
 }
-/* Left & Right alignment */
+/* Alinear a izquierda y derecha */
 .left {
 	float:left
 }
@@ -15,7 +15,7 @@ mark, rp, rt, ruby, summary, time {
 	width:100%;
 	overflow:hidden
 }
-/* Propiedades Globales ======================================================== */
+/* ========================== Propiedades Globales ========================== */
 body {
 	background:#000;
 	border:0;
@@ -417,4 +417,11 @@ footer a:hover {
 	float:right;
 	margin-left:4px;
 	padding:0 19px
+}
+
+#form2 .button2 {
+	float:right;
+	margin-left:4px;
+	padding:0 19px;
+	background:#000000
 }

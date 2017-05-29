@@ -9,7 +9,7 @@ $ap=$_POST['apellidos'];
 $id=$_POST['identificacion'];
 $fnacimiento=$_POST['fechanacimiento'];
 $tlf=$_POST['telf'];
-$nac=$_POST['nacionalidad'];
+$nac=$_POST['pais'];
 $mail=$_POST['mail'];
 $habSeleccionada=$_POST['habitaciones'];
 
