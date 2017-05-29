@@ -39,7 +39,7 @@ function googleTranslateElementInit() {
         <article id="content">
           <div class="box1">
             <div class="wrapper">
-              <form action="scripts_bbdd/realizar_reserva.php?fechallegada=<?php echo $_POST['fechallegada']; ?>&fechasalida=<?php echo $_POST['fechasalida']; ?>&pension=<?php echo $_POST['pension']; ?>" method="post">
+              <form action="scripts_bbdd/realizar_reserva.php?fechallegada=<?php echo $_POST['fechallegada']; ?>&fechasalida=<?php echo $_POST['fechasalida']; ?>&pension=<?php echo $_POST['pension']; ?>" id="form2" method="post">
                 <h2 align="center">Reservar Habitación</h2>
                 <fieldset>
                   <div class="row"><br>Fecha llegada: <input type="text" name="fechallegada" id="fechallegada" value="<?php echo $_POST['fechallegada']; ?>" disabled></div>
@@ -61,9 +61,8 @@ function googleTranslateElementInit() {
                         while($row=mysqli_fetch_array($resultado)){
                            echo ("<option value=\"".$row['id']."\">".$row['nombre']." - ".$row['clasificacion']." - ".$row['plazas']." plazas, ".$row['precio']."€/noche"."</option>");
                         }
-                      ?> 
+                      ?>
                       </select>
-                    </div>
                   <div class="row"><br>Nombre: <input type="text" name="nombre" id="nombre" required></div>
                   <div class="row"><br>Apellidos: <input type="text" name="apellidos" id="apellidos" required></div>
                   <div class="row"><br>Identificación: <input type="text" name="identificacion" id="identificacion" required></div><br>
@@ -71,9 +70,11 @@ function googleTranslateElementInit() {
                   <div class="row"><br>Telefono: <input type="text" name="telf" id="telf" required></div>
                   <div class="row"><br>Email:<input type="email" name="mail" id="mail" required> </div>
                   <div class="row"><br>Nacionalidad: <input type="text" name="nacionalidad" id="nacionalidad" required></div>
-                  <br> <div class="wrapper"></a><input type="reset" class="button1"></a><input type="submit" class="button1" value="Confirmar reserva"></div>
+                  <br> <div class="wrapper"></a><input type="reset" class="button1"></a><input type="submit" class="button1" value="Reservar"></div>
                 </fieldset>
               </form>
+              <img src="images/reserva_img.jpg" width="600" height="532">
+              </div>
             </div>
           </div>
         </div>
@@ -110,6 +111,5 @@ function googleTranslateElementInit() {
 </div>
 <script src="js/datepicker_llegada.js"></script>
 <script src="js/datepicker_salida.js"></script>
-<script src="js/slideShow.js"></script>
 </body>
 </html>

@@ -383,7 +383,24 @@ footer a:hover {
 	margin:0;
 	overflow:auto
 }
-
+#form2 {
+	width:280px;
+	float:left;
+	padding:30px;
+	background:#12110f
+}
+#form2 h2 {
+	padding:0 0 22px 0;
+	margin-top:-4px;
+	color:#fff
+}
+#form2 .right {
+	width:140px
+}
+#form2 .row {
+	height:30px;
+	line-height:22px
+}
 
 #form1 .select1 .jqTransformSelectWrapper div, #form1 .select1 .jqTransformSelectWrapper ul {
 	width:138px !important
